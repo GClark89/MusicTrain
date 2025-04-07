@@ -10,7 +10,7 @@ Within this project, we will take a look at a real dataset of songs from 1950 to
 
 
 
-## # Dataset Overview
+## Dataset Overview
 
 This dataset contains a mix of lyrical and continuous variables pulled from a 2020 research paper titled Music Dataset: Lyrics and Metadata from 1950 to 2019. Review the list below to find out more about this datasets columns:
 
