@@ -1,4 +1,4 @@
-![screenshots](Photos/Intro.png)
+![screenshots](Images/Intro.png)
 
 # Audio Recommendation Algorithm 
 
