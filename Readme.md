@@ -6,6 +6,7 @@ Within this project, we will take a look at a real dataset of songs from 1950 to
 
 
 ## Modules/Libraries
+
 - Python 
 - Numpy
 - MatplotLib
@@ -50,22 +51,21 @@ This dataset contains a mix of lyrical and continuous variables pulled from a 20
 
 ## Univariate Analysis 
 
-Exploring individual variables to understand their distribution and significance using barplots, lineplots and histograms
+Exploring individual variables to understand their distribution and significance using barplots, lineplots and histograms:
 - Top 10 most frequent artists 
 - Most Popular Genres
-- Genre vs features 
-- Age vs genre
 - Count of each topic 
 
+🔑 Johnny Cash and Ella Fitzgerald dominate the dataset. 
+🔑 While genres like Pop and Country are most represented - Hip Hip is much less(Hip Hop began in the 70's)
 
-* Key insighs: Johnny Cash and Ella Fitzgerald dominate the dataset. 
-While genres like Pop and Country are most represented - Hip Hip is much less(Hip Hop began in the 70's)
-* Take a look a
 
 
 
 ## Bivariate Analysis 
-Exploring relationships between two variables using scatterplots and boxplots 
+
+Exploring relationships between two variables using scatterplots and boxplots:
+
 - length of lyrics over a period of time w/ genre
 - Age vs topic 
 - Genre count w/ topic 
@@ -73,3 +73,59 @@ Exploring relationships between two variables using scatterplots and boxplots
 - Age vs features
 - Genre vs features
 
+🔑 Hip Hop shows the highes "obscene" score 
+🔑 Obscene, violence and shake-the-audience themes are more prominent in recent years  
+
+
+# Multivariate Analysis 
+
+Looking at how multiple variables interact using a correlation heatmap
+
+
+🔑 Strong negative correlation between release_date and age 
+🔑 long lyrics are foten more obscene; i.e Hip Hop 
+🔑 Romantic / family/spiritual and music tend to align with more older songs 
+🔑 Some features like communitcation or feelings are fairly neutral across the board - universal music topics
+
+
+# Hypothesis 
+
+🧠 Songs with high "obscene" and "shake-the-audience" scores will likely cluster with newer Hip Hop tracks.
+🧠 High "romantic" and "family/spiritual" scores might help identify older or emotionally driven songs 
+       good candidates for recommendation to users seeking “vintage vibes.”
+🧠 "Sadness" and "feelings" could be strong indicators of genre identity, especially in Pop and Count
+
+
+
+#  🔧 Data Preprocessing
+
+- Loaded the original dataset from train.csv
+- Dropped non-numeric and non-useful columns including:
+    - Text-heavy fields (lyrics, artist_name, track_name)
+- Metadata not needed for modeling (topic, genre, release_date, Unnamed: 0)
+- Performed initial exploratory checks:
+- Inspected missing values
+- Previewed dataset with .head() and .describe()
+- Saved the cleaned numerical dataset to data/CleanedMusic.csv for modeling
+
+
+# Modeling 
+
+* Clustering Songs with K-Means 
+- Grouped songs based on 17 lyrical/audio features using K-Means clustering
+- Used Elbow and Silhouette methods to determine the optimal number of clusters
+- Applied PCA for 2D visualization — each point is a song, colored by cluster
+- Added cluster labels to the dataset for deeper analysis
+
+* Interpreting Clusters
+- Merged cluster assignments with original metadata (genre, artist_name, etc.)
+- Sampled songs from each cluster to explore common lyrical themes
+- Clusters represent distinct content profiles — e.g., romantic, aggressive, emotional, or spiritual tones
+
+* Predicting New Songs
+Cleaned and scaled new test data
+Assigned each song to one of the 13 clusters using the trained model
+Combined results with metadata for interpretation and recommendation
+
+# Report 
+[Data Report](insert link here)
