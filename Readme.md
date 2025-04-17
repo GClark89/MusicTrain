@@ -56,8 +56,8 @@ Exploring individual variables to understand their distribution and significance
 - Most Popular Genres
 - Count of each topic 
 
-🔑 Johnny Cash and Ella Fitzgerald dominate the dataset. 
-🔑 While genres like Pop and Country are most represented - Hip Hip is much less(Hip Hop began in the 70's)
+- Johnny Cash and Ella Fitzgerald dominate the dataset. 
+- While genres like Pop and Country are most represented - Hip Hip is much less(Hip Hop began in the 70's)
 
 
 
