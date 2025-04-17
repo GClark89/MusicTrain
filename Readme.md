@@ -73,8 +73,8 @@ Exploring relationships between two variables using scatterplots and boxplots:
 - Age vs features
 - Genre vs features
 
-🔑 Hip Hop shows the highes "obscene" score 
-🔑 Obscene, violence and shake-the-audience themes are more prominent in recent years  
+- Hip Hop shows the highes "obscene" score 
+- Obscene, violence and shake-the-audience themes are more prominent in recent years  
 
 
 # Multivariate Analysis 
@@ -82,22 +82,22 @@ Exploring relationships between two variables using scatterplots and boxplots:
 Looking at how multiple variables interact using a correlation heatmap
 
 
-🔑 Strong negative correlation between release_date and age 
-🔑 long lyrics are foten more obscene; i.e Hip Hop 
-🔑 Romantic / family/spiritual and music tend to align with more older songs 
-🔑 Some features like communitcation or feelings are fairly neutral across the board - universal music topics
+- Strong negative correlation between release_date and age 
+- long lyrics are foten more obscene; i.e Hip Hop 
+- Romantic / family/spiritual and music tend to align with more older songs 
+- Some features like communitcation or feelings are fairly neutral across the board - universal music topics
 
 
 # Hypothesis 
 
-🧠 Songs with high "obscene" and "shake-the-audience" scores will likely cluster with newer Hip Hop tracks.
-🧠 High "romantic" and "family/spiritual" scores might help identify older or emotionally driven songs 
-       good candidates for recommendation to users seeking “vintage vibes.”
-🧠 "Sadness" and "feelings" could be strong indicators of genre identity, especially in Pop and Count
+- Songs with high "obscene" and "shake-the-audience" scores will likely cluster with newer Hip Hop tracks.
+- High "romantic" and "family/spiritual" scores might help identify older or emotionally driven songs 
+    - Good candidates for recommendation to users seeking “vintage vibes.”
+- "Sadness" and "feelings" could be strong indicators of genre identity, especially in Pop and Count
 
 
 
-#  🔧 Data Preprocessing
+# Data Preprocessing
 
 - Loaded the original dataset from train.csv
 - Dropped non-numeric and non-useful columns including:
