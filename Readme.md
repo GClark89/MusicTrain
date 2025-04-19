@@ -57,7 +57,7 @@ Exploring individual variables to understand their distribution and significance
 - Count of each topic 
 
 Insights:
-- Johnny Cash and Ella Fitzgerald dominate the dataset
+- Johnny Cash and Ella Fitzgerald dominate the datasetg
 - While genres like Pop and Country are most represented - Hip Hip is much less(Hip Hop began in the 70's)
 
 
@@ -83,7 +83,7 @@ Insights
 
 Looking at how multiple variables interact using a correlation heatmap
 
-Insights
+Insights:
 - Strong negative correlation between release_date and age 
 - long lyrics are foten more obscene; i.e Hip Hop 
 - Romantic / family/spiritual and music tend to align with more older songs 
