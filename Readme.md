@@ -123,11 +123,12 @@ Insights:
 - Merged cluster assignments with original metadata (genre, artist_name, etc.)
 - Sampled songs from each cluster to explore common lyrical themes
 - Clusters represent distinct content profiles — e.g., romantic, aggressive, emotional, or spiritual tones
+- Described each cluster using the 4 most popular features and compared to the 4 least popular features 
 
 * Predicting New Songs
-Cleaned and scaled new test data
-Assigned each song to one of the 13 clusters using the trained model
-Combined results with metadata for interpretation and recommendation
+- Cleaned and scaled new test data
+- Assigned each song to one of the 13 clusters using the trained model
+- Combined results with metadata for interpretation and recommendation
 
 # Report 
-[Data Report](insert link here)
+[Data Report](https://github.com/GClark89/MusicTrain/blob/main/Report.ipynb)
